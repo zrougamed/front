@@ -8,8 +8,8 @@ import axios from 'axios'
 // for each client)
 
 
-// const api = axios.create({ baseURL: process.env.API })
-const api = axios.create({ baseURL: 'http://c360.servehttp.com:9001' })
+const api = axios.create({ baseURL: process.env.API })
+//const api = axios.create({ baseURL: 'http://c360.servehttp.com:9001' })
 
 export default boot(({ app }) => {
   // for use inside Vue files (Options API) through this.$axios and this.$api
