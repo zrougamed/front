@@ -1,0 +1,10 @@
+{
+  "name": "p360 Frontend",
+  "description": "Solution Accelerator p360 Frontend template",
+  "website": "http://wwww.tigergraph.com",
+  "success_url": "/",
+  "addons": [ ],
+  "scripts": {
+    "postdeploy": ""
+  }
+}

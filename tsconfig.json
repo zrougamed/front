@@ -1,0 +1,13 @@
+{
+    "extends": "@quasar/app/tsconfig-preset",
+    "compilerOptions": {
+      "baseUrl": ".",
+      "strictNullChecks": false,
+      "skipLibCheck": true,
+      "experimentalDecorators": true, 
+      "emitDecoratorMetadata": true, 
+      /* Advanced Options */
+      "forceConsistentCasingInFileNames": true 
+    }
+  }
+  
