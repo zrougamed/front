@@ -233,20 +233,28 @@ export default {
             },
              onSubmit (evt) {
                
+              console.log(evt);
+              //evt.preventDefault();
               
                 let vertices = []
                 let edges = []
-                for (const [ name, value ] of formData.entries()) {
-                  if (name == "v_type"){
-                    vertices.push(value);
+                for (let element of evt.srcElement) {
+                  if (element.name == "v_type"){
+                    for (let option of element) {
+                      vertices.push(option.value);
+                    }
                   }
-                  if (name == "e_type"){
-                    edges.push(value);
+                  if (element.name == "e_type"){
+                    for (let option of element) {
+                      edges.push(option.value);
+                    }
                   }
                 }
                 edges = edges.join('|')
                 vertices = vertices.join('|')
-                
+                console.log(edges);
+                console.log(vertices);
+
                 this.store.dispatch("members/getCommunityGraph",{"edges":edges,"vertices":vertices});
 
             },
